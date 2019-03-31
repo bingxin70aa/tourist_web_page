@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="iceStone <ice@wedn.net>">
+  <title>私人订制旅游平台</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <style type="text/css">
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+</style>
+<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>    
+
+</head>
+
+<body>
+  <!-- 顶部区域 -->
+  <header>
+    <!-- 通栏菜单 -->
+    <div class="topbar hidden-sm hidden-xs">
+      <div class="container">
+        <div class="row">
+          <div class="tb-1 col-md-2">
+            <a href="#" class="text-muted">
+              <i class="icon-mobilephone"></i>
+              <span>手机微金所</span>
+              <i class="glyphicon glyphicon-chevron-down"></i>
+              <img src="img/c_06.jpg" alt="扫一扫">
+            </a>
+          </div>
+          <div class="tb-2 col-md-5 text-center text-muted">
+            <i class="icon-telephone"></i><span>4006-89-4006（服务时间：9:00-21:00）</span>
+          </div>
+          <div class="tb-3 col-md-2 text-center">
+            <a href="#" class="text-muted">常见问题</a>
+            <a href="#" class="text-muted">财富登录</a>
+          </div>
+          <div class="tb-4 col-md-3 text-center">
+            <a href="#" class="btn btn-register btn-sm">免费注册</a>
+            <a href="#" class="text-muted" data-toggle="modal" data-target=".modal">登录</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /通栏菜单 -->
+    <!-- 导航菜单 -->
+    <nav class="navbar navbar-itcast" data-spy="affix" data-offset-top="200" data-offset-bottom="1000">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_menu" aria-expanded="false">
+            <span class="sr-only">切换菜单显示</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img  class="navbar-brand" scr="https://cdn-img.zanadu.cn/assets/b81bfb84/public/images/logo/zanadu/horizontal-white.png" height="70">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav_menu">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">目的地 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">预定行程</a></li>
+            <li><a href="#">折扣</a></li>
+            <li><a href="#">私人订制</a></li>
+            <li><a href="#">活动</a></li>
+            <li><a href="#">微论坛</a></li>
+            <li><a href=" "><div class="left relative"><input class="input-text js-header-keyword js-search-keyword ac_input error" id="SearchForm_keyword_header" autocomplete="off" placeholder="请输入目的地／酒店／邮轮" type="text" name="SearchForm[keyword]"></div></a ></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right hidden-sm ">
+            <li><a href="#">个人中心</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /导航菜单 -->
+  </header>
+  <!-- /顶部区域 -->
+  <!-- 通栏轮播 -->
+  <section id="home_slide" class="carousel slide" data-ride="carousel">
+    <!-- 指示器 -->
+    <ol class="carousel-indicators">
+      <li data-target="#home_slide" data-slide-to="0" class="active"></li>
+      <li data-target="#home_slide" data-slide-to="1"></li>
+      <li data-target="#home_slide" data-slide-to="2"></li>
+      <li data-target="#home_slide" data-slide-to="3"></li>
+    </ol>
+    <!-- 轮播页 -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="item-image" data-image-large="img/slide_01_2000x410.jpg" data-image-small="img/slide_01_640x340.jpg" data-image-alt="哈哈"></div>
+      </div>
+      <div class="item">
+        <div class="item-image" data-image-large="img/slide_02_2000x410.jpg" data-image-small="img/slide_02_640x340.jpg" data-image-alt="哈哈"></div>
+      </div>
+      <div class="item">
+        <div class="item-image" data-image-large="img/slide_03_2000x410.jpg" data-image-small="img/slide_03_640x340.jpg" data-image-alt="哈哈"></div>
+      </div>
+      <div class="item">
+        <div class="item-image" data-image-large="img/slide_04_2000x410.jpg" data-image-small="img/slide_04_640x340.jpg" data-image-alt="哈哈"></div>
+      </div>
+    </div>
+    <!-- 控制按钮 -->
+    <a class="left carousel-control" href="#home_slide" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">上一张</span>
+    </a>
+    <a class="right carousel-control" href="#home_slide" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">下一张</span>
+    </a>
+  </section>
+  <!-- /通栏轮播 -->
+  <!-- 网站特色 -->
+  <section id="features" class="hidden-xs">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <a href="#">
+            <div class="media">
+              <div class="media-left">
+                <i class="icon-uniE907"></i>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">赞品行程</h4>
+                <p>全程保障旅行安全</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a href="#">
+            <div class="media">
+              <div class="media-left">
+                <i class="icon-uniE903"></i>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">海外自由行</h4>
+                <p>由PICC保驾护航</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a href="#">
+            <div class="media">
+              <div class="media-left">
+                <i class="icon-uniE901"></i>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">轻奢小团</h4>
+                <p>打造专属于您的享受</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a href="#">
+            <div class="media">
+              <div class="media-left">
+                <i class="icon-uniE900"></i>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">大航海时代</h4>
+                <p>实现海贼王的梦想</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a href="#">
+            <div class="media">
+              <div class="media-left">
+                <i class="icon-uniE904"></i>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">精品别墅</h4>
+                <p>静谧舒适伴您入睡</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a href="#">
+            <div class="media">
+              <div class="media-left">
+                <i class="icon-uniE902"></i>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">精品酒店</h4>
+                <p>您的幸福便是我们的幸福</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /网站特色 -->
+  <!-- 预约投标 -->
+  <section id="booking">
+    <div class="container">
+      <p class="pull-left"><i class="icon-uniE906"></i> 现在有<span>458</span>人在进行私人订制，累计预约交易成功<span>7409</span>次。 什么是？ <a class="just-now" href="#">立即预约</a></p>
+      <p class="hidden-sm hidden-xs pull-right"><a class="quick-learn" href="#"><i class="icon-uniE905"></i> 私人订制宣传片</a></p>
+    </div>
+  </section>
+  <!-- /预约投标 -->
+  <!-- 投资产品 -->
+	
+  <section id="products">
+    <div class="container">
+      <!-- Nav tabs -->
+      <div class="touch-scroll">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#category_01" aria-controls="category_01" role="tab" data-toggle="tab">大航海时代</a></li>
+          <li role="presentation"><a href="#category_02" aria-controls="category_02" role="tab" data-toggle="tab">品介优选 </a></li>
+          <li role="presentation"><a href="#category_03" aria-controls="category_03" role="tab" data-toggle="tab">赞品旅程 </a></li>
+          <li role="presentation"><a href="#category_04" aria-controls="category_04" role="tab" data-toggle="tab">海外自由行 </a></li>
+          <li role="presentation"><a href="#category_05" aria-controls="category_05" role="tab" data-toggle="tab">特别推荐</a></li>
+          <li role="presentation"><a href="#category_06" aria-controls="category_06" role="tab" data-toggle="tab">国内短假</a></li>
+          <li role="presentation"><a href="#category_06" aria-controls="category_06" role="tab" data-toggle="tab">精选酒店</a></li>
+          <li class="hidden-sm hidden-xs pull-right"><a href="#" class="btn btn-link">更多</a></li>
+        </ul>
+      </div>
+      <!-- Tab panes -->
+      <div class="tab-content">
+							<!-- 卡片 -->
+								<div class="post-slide" >
+				    <div class="post-img">
+				        <a href="#"><img src="https://cdn-photos.zanadu.cn/resources/zanadu/bundle/245/key2_2454_bundle.jpg!660x240?v=1492581515" alt=""></a>
+				    </div>
+				    <div class="post-content">
+				        <h3 class="post-title"><a href="#">【大航海时代】 银云探险号15天12晚南极半岛巡游——极地华丽冒险，一生只此一次</a></h3>
+				        <p class="post-description">				          
+										奢华探险邮轮
+银海邮轮源自意大利，专为追求高品质的邮轮爱好者提供卓越环球旅行
+
+踏足南极大陆
+探险专家将带您踏上南极大陆，近距离观赏壮阔美妙的原始冰山与冰川
+
+追寻野生动物
+来这里和企鹅、海豹、鲸鱼及海鸟们偶遇吧，它们将告诉您南极的秘密
+
+
+				        </p>
+				        <ul class="post-bar">
+				            <li><i class="fa fa-calendar"></i> 2018-7-28</li>
+				            <li>
+				                <i class="fa fa-folder"></i>
+				                <a href="#"><strong_price>¥ 115,000</strong_price></a>
+				                <a href="#"></a>
+				                <a href="#"></a>
+				            </li>
+				        </ul>
+				        <a href="#" class="read-more">点击查看</a>
+				    </div>
+				</div>               
+								<div class="post-slide" >
+						<div class="post-img">
+								<a href="#"><img src="https://cdn-photos.zanadu.cn/resources/zanadu/bundle/198/key2_1984_bundle.jpg" alt=""></a>
+						</div>
+						<div class="post-content">
+								<h3 class="post-title"><a href="#">【大航海时代】银海探索号13天11晚穿越北极圈——环游斯瓦尔巴群岛，航向世界之巅</a></h3>
+								<p class="post-description">
+										巡航冰川峡湾
+奢华探险邮轮银海探索号将带您巡游世界上最原始的冰川、冰山与峡湾
+
+寻觅野生动物
+北极熊、海豹、驯鹿、北极狐、座头鲸...来亲眼目睹这些神秘北极动物
+
+观赏北极鸟类
+穿梭在美丽的冰山之间，多种珍稀北极海鸟将在一路上伴随着本次航程
+
+
+								</p>
+								<ul class="post-bar">
+										<li><i class="fa fa-calendar"></i> 2018-7-30</li>
+										<li>
+												<i class="fa fa-folder"></i>
+												<a href="#"><strong_price>¥ 67,900 /人起</strong_price></a>
+												<a href="#"></a>
+												<a href="#"></a>
+										</li>
+								</ul>
+								<a href="#" class="read-more">点击查看</a>
+						</div>
+				</div>               			
+								<div class="post-slide" >
+						<div class="post-img">
+								<a href="#"><img src="https://cdn-photos.zanadu.cn/resources/zanadu/bundle/200/key2_2002_bundle.jpg" alt=""></a>
+						</div>
+						<div class="post-content">
+								<h3 class="post-title"><a href="#">【大航海时代】水晶合韵号13天12晚西地中海浪漫热情之旅</a></h3>
+								<p class="post-description">
+										极致邮轮体验
+奢华翘楚水晶合韵号邮轮倾尽世间奇珍于眼前，让您享受极致尊贵的礼遇
+
+无上饕餮盛宴
+水晶合韵号为您准备了无限惊喜，以精美的世界美食满足您味蕾的严苛要求
+
+巡航西地中海
+本次航程将带您巡游西地中海沿岸经典欧洲城市，重新发现这里的热情浪漫
+
+
+								</p>
+								<ul class="post-bar">
+										<li><i class="fa fa-calendar"></i> 2016-7-28</li>
+										<li>
+												<i class="fa fa-folder"></i>
+												<a href="#"><strong_price>¥ 33,500 /人起</strong_price></a>
+												<a href="#"></a>
+												<a href="#"></a>
+										</li>
+								</ul>
+								<a href="#" class="read-more">点击查看</a>
+						</div>
+				</div>               			
+								<div class="post-slide" >
+						<div class="post-img">
+								<a href="#"><img src="https://cdn-photos.zanadu.cn/resources/zanadu/bundle/149/key2_1492_bundle.jpg" alt=""></a>
+						</div>
+						<div class="post-content">
+								<h3 class="post-title"><a href="#">【大航海时代】银神号地中海10天8晚亚得里亚迷情之旅-旅游线路</a></h3>
+								<p class="post-description">
+										亚得里亚海的迷情之旅
+从雅典古都到水城威尼斯，途径多个黑山与克罗地亚港口，领略非一般欧陆海岸风情
+
+舒适慢节奏的海上假期
+只有邮轮才可能在短短一周内舒适地赏遍亚得里亚海沿途的迷人风光
+
+一价全包的奢华体验
+套餐包含7晚邮轮住宿，每日三餐，无限酒饮，真正高端奢华的海上假期
+
+
+								</p>
+								<ul class="post-bar">
+										<li><i class="fa fa-calendar"></i> 2016-8-28</li>
+										<li>
+												<i class="fa fa-folder"></i>
+												<a href="#"><strong_price>¥ 40,500 /人起</strong_price></a>
+												<a href="#"></a>
+												<a href="#"></a>
+										</li>
+								</ul>
+								<a href="#" class="read-more">点击查看</a>
+						</div>
+				</div>               			
+							
+							<!-- 卡片 -->
+      </div>
+    </div>
+  </section>
+  <!-- /投资产品 -->
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/web.js"></script>
+
+
+  <aside class="col-md-3">
+  	<div class="product_sort fl">
+	<div class="hd">旅游产品导航</div>
+	<div class="bd">
+		<div class="item">
+			<div class="title one"><a href="#"><i></i>出境游</a></div>
+			<div class="list">
+				<a href="#">泰国</a>
+				<a href="#">首尔</a>
+				<a href="#">曼谷</a>
+				<a href="#">大阪</a>
+				<a href="#">普吉岛</a>
+			</div>
+			<div class="arrow">&gt;</div>
+			<div class="line"></div>
+			<div class="subitem">
+				<div class="inner">
+					<div class="tit tit1">
+						<div class="name">泰国</div>
+						<ul>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+						</ul>
+					</div>
+					<div class="tit">
+						<div class="name">印度尼西亚</div>
+						<ul>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="title two"><a href="#"><i></i>国内游</a></div>
+			<div class="list">
+				<a href="#">泰国</a>
+				<a href="#">首尔</a>
+				<a href="#">曼谷</a>
+				<a href="#">大阪</a>
+				<a href="#">普吉岛</a>
+			</div>
+			<div class="arrow">&gt;</div>
+			<div class="line"></div>
+			<div class="subitem">
+				<div class="inner">
+					<div class="tit tit1">
+						<div class="name">泰国</div>
+						<ul>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+						</ul>
+					</div>
+					<div class="tit">
+						<div class="name">印度尼西亚</div>
+						<ul>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="title three"><a href="#"><i></i>周边游</a></div>
+			<div class="list">
+				<a href="#">泰国</a>
+				<a href="#">首尔</a>
+				<a href="#">曼谷</a>
+				<a href="#">大阪</a>
+				<a href="#">普吉岛</a>
+			</div>
+			<div class="arrow">&gt;</div>
+			<div class="line"></div>
+			<div class="subitem">
+				<div class="inner">
+					<div class="tit tit1">
+						<div class="name">泰国</div>
+						<ul>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+						</ul>
+					</div>
+					<div class="tit">
+						<div class="name">印度尼西亚</div>
+						<ul>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="title four"><a href="#"><i></i>邮轮</a></div>
+			<div class="list">
+				<a href="#">泰国</a>
+				<a href="#">首尔</a>
+				<a href="#">曼谷</a>
+				<a href="#">大阪</a>
+				<a href="#">普吉岛</a>
+			</div>
+			<div class="arrow">&gt;</div>
+			<div class="line"></div>
+			<div class="subitem">
+				<div class="inner">
+					<div class="tit tit1">
+						<div class="name">泰国</div>
+						<ul>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+						</ul>
+					</div>
+					<div class="tit">
+						<div class="name">印度尼西亚</div>
+						<ul>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="title five"><a href="#"><i></i>东南亚</a></div>
+			<div class="list">
+				<a href="#">泰国</a>
+				<a href="#">首尔</a>
+				<a href="#">曼谷</a>
+				<a href="#">大阪</a>
+				<a href="#">普吉岛</a>
+			</div>
+			<div class="arrow">&gt;</div>
+			<div class="line"></div>
+			<div class="subitem">
+				<div class="inner">
+					<div class="tit tit1">
+						<div class="name">泰国</div>
+						<ul>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+						</ul>
+					</div>
+					<div class="tit">
+						<div class="name">印度尼西亚</div>
+						<ul>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="title six"><a href="#"><i></i>日本、韩国、朝鲜</a></div>
+			<div class="list">
+				<a href="#">泰国</a>
+				<a href="#">首尔</a>
+				<a href="#">曼谷</a>
+				<a href="#">大阪</a>
+				<a href="#">普吉岛</a>
+			</div>
+			<div class="arrow">&gt;</div>
+			<div class="line"></div>
+			<div class="subitem">
+				<div class="inner">
+					<div class="tit tit1">
+						<div class="name">泰国</div>
+						<ul>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+						</ul>
+					</div>
+					<div class="tit">
+						<div class="name">印度尼西亚</div>
+						<ul>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="title seven"><a href="#"><i></i>欧美</a></div>
+			<div class="list">
+				<a href="#">泰国</a>
+				<a href="#">首尔</a>
+				<a href="#">曼谷</a>
+				<a href="#">大阪</a>
+				<a href="#">普吉岛</a>
+			</div>
+			<div class="arrow">&gt;</div>
+			<div class="line"></div>
+			<div class="subitem">
+				<div class="inner">
+					<div class="tit tit1">
+						<div class="name">泰国</div>
+						<ul>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+						</ul>
+					</div>
+					<div class="tit">
+						<div class="name">印度尼西亚</div>
+						<ul>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="title eight"><a href="#"><i></i>澳洲</a></div>
+			<div class="list">
+				<a href="#">泰国</a>
+				<a href="#">首尔</a>
+				<a href="#">曼谷</a>
+				<a href="#">大阪</a>
+				<a href="#">普吉岛</a>
+			</div>
+			<div class="arrow">&gt;</div>
+			<div class="line"></div>
+			<div class="subitem">
+				<div class="inner">
+					<div class="tit tit1">
+						<div class="name">泰国</div>
+						<ul>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+						</ul>
+					</div>
+					<div class="tit">
+						<div class="name">印度尼西亚</div>
+						<ul>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">新加坡</a></li>
+							<li><a href="#">菲律宾</a></li>
+							<li><a href="#">沙巴</a></li>
+							<li><a href="#">文莱</a></li>
+							<li><a href="#">蓝梦岛</a></li>
+							<li><a href="#">吉隆坡</a></li>
+							<li><a href="#">塞班岛</a></li>
+							<li><a href="#">柬埔寨</a></li>
+							<li><a href="#">马来西亚</a></li>
+							<li><a href="#">越南</a></li>
+							<li><a href="#">下龙湾</a></li>
+							<li><a href="#">吴哥</a></li>
+							<li><a href="#">芽庄</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<script type="text/javascript">
+//首页旅游产品分类
+$(".product_sort .bd .item").hover(function(){
+	$(this).addClass("layer");
+},function(){
+	$(this).removeClass("layer");
+});
+</script>
+
+
+  </aside>
+<section id="news">
+    <div class="container">
+      <div class="row">
+          <div class="news-title">
+            全部文章
+          </div>
+<div class="col-md-9 col-md-push-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-5">
+        </div>
+   <!-- Nav tabs -->
+   <div class="col-md-9 col-md-push-2">
+          <ul class="nav nav-pills nav-stacked news-nav" role="tablist">
+            <li role="presentation" class="active"><a href="#news_1" aria-controls="news_1" role="tab" data-toggle="tab" data-title="全部新聞"><i class="icon-news01"></i></a></li>
+            <li role="presentation"><a href="#news_2" aria-controls="news_2" role="tab" data-toggle="tab" data-title="媒體報道"><i class="icon-news02"></i></a></li>
+            <li role="presentation"><a href="#news_3" aria-controls="news_3" role="tab" data-toggle="tab" data-title="微金所頭條"><i class="icon-news03"></i></a></li>
+            <li role="presentation"><a href="#news_4" aria-controls="news_4" role="tab" data-toggle="tab" data-title="行業資訊"><i class="icon-news04"></i></a></li>
+          </ul>
+          <i class="line hidden-sm hidden-xs"></i>
+        </div>
+
+        <aside class="col-md-pull-10">
+ 
+
+                              
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+
+<style type="text/css">
+
+*{margin:0;padding:800;list-style-type:none;}
+
+a,img{border:0;}
+
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";background:#e1ebf3;}
+
+
+
+/* leftsead */
+
+#leftsead{height:143px;position:fixed;top:258px;right:0px;}
+
+*html #leftsead{margin-top:258px;position:absolute;top:expression(eval(document.documentElement.scrollTop));}
+
+#leftsead li{height:60px;}
+
+#leftsead li img{float:right;}
+
+#leftsead li a{height:49px;float:right;display:block;min-width:47px;max-width:131px;}
+
+#leftsead li a .shows{display:block;}
+
+#leftsead li a .hides{margin-right:-143px;cursor:pointer;cursor:hand;}
+
+#leftsead li a.youhui .hides{display:none;position:absolute;right:190px;top:2px;}
+
+</style>
+
+
+
+</head>
+
+
+
+<body style="height:1600px;" >
+
+
+
+<div id="leftsead">
+
+	<ul>
+
+		<li><a href="http://www.jq22.com/"><img src="img/foot03/ll01.png"  height="49" class="hides"/><img src="img/foot03/l01.png" width="47" height="49" class="shows" /></a></li>
+
+		<li><a href="http://www.jq22.com/"><img src="img/foot03/ll03.png"  height="49"  class="hides"/><img src="img/foot03/l03.png" width="47" height="49" class="shows" /></a></li>
+
+		<li><a class="youhui"><img src="img/foot03/l02.png" width="47" height="49" class="shows" /><img src="img/foot03/youhui.png" width="172" height="292" class="hides" usemap="#taklhtml"/><map name="taklhtml"><area shape="rect" coords="26,273,115,300 " href="http://www.jq22.com/" /></map></a></li>
+
+		<li><a href="tencent://message/?uin=800027897&Site=test315.nesky.cn&Menu=yes"><img src="img/foot03/ll04.png"  height="49" class="hides"/><img src="img/foot03/l04.png" width="47" height="49" class="shows" /></a></li>
+
+		<li><a href="http://www.jq22.com/"><img src="img/foot03/ll05.png"  height="49" class="hides"/><img src="img/foot03/l05.png" width="47" height="49" class="shows" /></a></li>
+
+		<li><a id="top_btn"><img src="img/foot03/ll06.png" height="49" class="hides"/><img src="img/foot03/l06.png" width="47" height="49" class="shows" /></a></li>
+
+	</ul>
+
+</div><!--leftsead end-->
+
+
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+
+	$("#leftsead a").hover(function(){
+
+		if($(this).prop("className")=="youhui"){
+
+			$(this).children("img.hides").show();
+
+		}else{
+
+			$(this).children("img.hides").show();
+
+			$(this).children("img.shows").hide();
+
+			$(this).children("img.hides").animate({marginRight:'0px'},'slow'); 
+
+		}
+
+	},function(){ 
+
+		if($(this).prop("className")=="youhui"){
+
+			$(this).children("img.hides").hide('slow');
+
+		}else{
+
+			$(this).children("img.hides").animate({marginRight:'-143px'},'slow',function(){$(this).hide();$(this).next("img.shows").show();});
+
+		}
+
+	});
+
+
+
+	$("#top_btn").click(function(){if(scroll=="off") return;$("html,body").animate({scrollTop: 0}, 600);});
+
+
+
+});
+
+</script>
+ </aside>
+ 
+ 
+        <div class="col-md-4 col-md-push-2">
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="news_1">
+              <ul>
+                <li>在壮美的国家公园里，享用永熙湾边浪漫晚餐</li>
+                <li>在壮美的国家公园里，享用永熙湾边浪漫晚餐</li>
+                <li>在壮美的国家公园里，享用永熙湾边浪漫晚餐</li>
+                <li>在壮美的国家公园里，享用永熙湾边浪漫晚餐</li>
+                <li>在壮美的国家公园里，享用永熙湾边浪漫晚餐</li>
+                <li>在壮美的国家公园里，享用永熙湾边浪漫晚餐</li>
+                <li>在壮美的国家公园里，享用永熙湾边浪漫晚餐</li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="news_2">
+              <ul>
+                <li>【至臻精选】越南芽庄安缦 Amanoi 4天3晚海边伊甸之旅</li>
+                <li>【至臻精选】越南芽庄安缦 Amanoi 4天3晚海边伊甸之旅</li>
+                <li>【至臻精选】越南芽庄安缦 Amanoi 4天3晚海边伊甸之旅</li>
+                <li>【至臻精选】越南芽庄安缦 Amanoi 4天3晚海边伊甸之旅</li>
+                <li>【至臻精选】越南芽庄安缦 Amanoi 4天3晚海边伊甸之旅</li>
+                <li>【至臻精选】越南芽庄安缦 Amanoi 4天3晚海边伊甸之旅</li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="news_3">
+              <ul>
+                <li>水清沙幼，风光旖旎；跟着麦当娜一起，在幸福秘境里，共享每天第一缕暖阳</li>
+                <li>水清沙幼，风光旖旎；跟着麦当娜一起，在幸福秘境里，共享每天第一缕暖阳</li>
+                <li>水清沙幼，风光旖旎；跟着麦当娜一起，在幸福秘境里，共享每天第一缕暖阳</li>
+                <li>水清沙幼，风光旖旎；跟着麦当娜一起，在幸福秘境里，共享每天第一缕暖阳</li>
+                <li>水清沙幼，风光旖旎；跟着麦当娜一起，在幸福秘境里，共享每天第一缕暖阳</li>
+                <li>水清沙幼，风光旖旎；跟着麦当娜一起，在幸福秘境里，共享每天第一缕暖阳</li>
+                <li>水清沙幼，风光旖旎；跟着麦当娜一起，在幸福秘境里，共享每天第一缕暖阳</li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="news_4">
+              <ul>
+                <li>跟随奢华邮轮保罗高更号，巡游波利尼西亚，重新发现高更画笔下的美丽岛屿</li>
+                <li>跟随奢华邮轮保罗高更号，巡游波利尼西亚，重新发现高更画笔下的美丽岛屿</li>
+                <li>跟随奢华邮轮保罗高更号，巡游波利尼西亚，重新发现高更画笔下的美丽岛屿</li>
+                <li>跟随奢华邮轮保罗高更号，巡游波利尼西亚，重新发现高更画笔下的美丽岛屿</li>
+                <li>跟随奢华邮轮保罗高更号，巡游波利尼西亚，重新发现高更画笔下的美丽岛屿</li>
+                <li>跟随奢华邮轮保罗高更号，巡游波利尼西亚，重新发现高更画笔下的美丽岛屿</li>
+                <li>跟随奢华邮轮保罗高更号，巡游波利尼西亚，重新发现高更画笔下的美丽岛屿</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  
+
+  </section>
+  </section>
+  </section>
+  <!-- /新闻 -->
+
+
+  <!-- 合作伙伴 -->
+<footer class="footer-bg">
+<div class="btn-back-to-top back-to-top-absolute"></div>
+<div class="footer-main">
+<section class="padding-top-20">
+<div class="container">
+<div class="col3 footer-padding">
+<div class="left social media">
+<h4>联系我们</h4>
+<ul class="no-bullets">
+<li class="phone-num<span class="left">客服热线：</span>
+<a href=" ">400-605-9588</a >
+</li>
+<li class="phone-number"><span>广告合作：</span><a href="mailto:ad@zanadu.cn">ad@zanadu.cn</a ></li>
+<li><a href="mailto:info@zanadu.cn" class="color-gray">info@zanadu.cn</a ></li>
+</ul>
+</div>
+
+<div class="left nav-section">
+<h4>赞那度微信开通</h4>
+<ul class="no-bullets">
+<li class="color-green">微信服务号 <span class="icon-wechat"></span></li>
+<li>赞那度旅行顾问</li>
+<li>旅行产品与服务</li>
+</ul>
+<ul class="no-bullets margin-top-20">
+<li class="color-green">微信订阅号 <span class="icon-wechat"></span></li>
+<li>赞那度旅行人生</li>
+<li>旅行体验 &amp; 生活方式</li>
+</ul>
+</div>
+
+<div class="left nav-section">
+<h4>关于赞那度</h4>
+<ul class="no-bullets">
+<li><a href="/site/aboutUs.html" rel="nofollow">关于我们</a ></li>
+<li><a href="/site/meetTheTeam.html" rel="nofollow">团队介绍</a ></li>
+<li><a href="/site/press.html" rel="nofollow">媒体报道</a ></li>
+<li><a href="/site/careers.html" rel="nofollow">工作机会</a ></li>
+</ul>
+</div>
+
+<div class="left nav-section">
+<h4>技术支持</h4>
+<ul class="no-bullets">
+<li><a href="/site/privacyPolicy.html" rel="nofollow">隐私政策</a ></li>
+<li><a href="/site/generalPolicy.html" rel="nofollow">服务条款 </a ></li>
+<li><a href="/site/contactUs.html" rel="nofollow">联系我们</a ></li>
+<li><a href="/site/partner.html" rel="nofollow">合作伙伴</a ></li>
+</ul>
+</div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                    
+                            <div class="clearfix"></div>
+                            <div class="c7C878E text-left">
+                                                                    欢迎来到赞那度，快来<a class="social" href="/user/register.html" rel="nofollow">注册</a >吧！
+                                                                <strong class="right media-right"><a href="/?is_mobile=1" class="color-gray" rel="nofollow rel=" nofollow"="" "="">切换到手机版浏览</a >
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </section>
+        
+                    <section class="footer">
+                <div class="footer-cloud">
+                    <div class="cloud-mask">
+                     
+                        <div class="footer-info">
+                            <div class="container">
+                                <div class="qr-zanaducn">
+                                    
+                                </div>
+                                <div class="center text-center">
+                                    <p>广州私人订制国际旅行社有限公司，旅行社业务经营许可证编号：L-BJ-CJ00559</p >
+                                    <p class="">Copyright Personal Tailor 私人订制 2018-2018 | <a href="http://www.miitbeian.gov.cn" class="color-default" target="_blank" rel="nofollow">京ICP备 11041827号</a > | <a href="http://www.miitbeian.gov.cn" class="color-default" target="_blank" rel="nofollow">京ICP证120221</a > | <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502036479" class="color-default" target="_blank" rel="nofollow">
+                                      <img src=""16" class="police">粤公网安备11010502xxxxxx号</a ></p >
+                                    <div class="logo">
+                                        <img src="img/travel.png" width="100" alt="私人订制官网">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo" style="text-align: center; width: 100; border: none solid 1px; padding-left: 40px;">
+                        <img src="img/personal_tailor.jpeg" width="100" style="margin: 0 auto;" />
+                    </div>
+                </div>
+            </section>
+            </div>
+</footer>
+  <!-- /合作伙伴 -->
+  <footer>
+  </footer>
+  <!-- 登录对话框 -->
+  <div class="modal fade">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">欢迎登录哈哈哈</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Sign in</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- /登录对话框 -->
+  <script src="lib/jquery/jquery.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+  <script src="./iconfont.js"></script>
+
+</body>
+
+</html>
